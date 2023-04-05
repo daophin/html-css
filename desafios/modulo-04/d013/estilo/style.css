@@ -1,19 +1,35 @@
 @charset "UTF-8";
 
-body {
-    overflow-y: hidden;
-    background-image: url("../imagens/fundo-madeira.jpg");
-   text-align: center; 
-   background-position: center bottom;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
 
 }
 
-iframe {
-    width: 327px;
+body {
+    background: top center / cover no-repeat url("../imagens/fundo-madeira.jpg") fixed;
+}
+
+main {
+    position: relative; 
+    height: 100vh;
+}
+
+section#telefone {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(70%);
+    top: 50%;
+    left: 50%;
     height: 627px;
-    margin: 0 auto;
-    transform: scale(70%);
+    width: 311px;
+    background: url("../imagens/frame-iphone.png");
+    background-repeat: no-repeat;
+
+
 }
