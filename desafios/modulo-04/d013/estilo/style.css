@@ -30,8 +30,6 @@ section#telefone {
     width: 311px;
     background: url("../imagens/frame-iphone.png");
     background-repeat: no-repeat;
-
-
 }
 
 iframe#tela {
@@ -41,11 +39,7 @@ iframe#tela {
     height: 470px;
     width: 266px;
 }
-
-section#redes-sociais{
-    text-align: right;
-}
-
+/* Essa é uma configuração inicial, para que se quiser criar uma subclasse :hover, ter um tipo de transição de animação, como se no :hover adicionasse um outro frame de imagem para criar uma ilusão de movimento. */
 section#redes-sociais img {
     width: 50px;
     margin: 10px;
@@ -53,10 +47,47 @@ section#redes-sociais img {
     box-shadow: 2px 2px 5px black;
     box-sizing: border-box;
 }
-
+/* a subclasse :hover trás um efeito nesta configuração que ao passar o mouse por cima de qualquer botão, criará um efeito como se estivesse iluminando as bordas.  E com o aumento do box-shadow nos parametros, da sensação de um fundo de sombra ao passar o mouse por cima*/
 section#redes-sociais img:hover {
     border: 2px solid gainsboro;
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px black;
     transition: transform .3s, border .2s;
 }
+/* Abaixo está configuração de cada botão separados por classes, para ficarem a direita com a posição absoluta, dando a cada box uma sobreposição trazendo para frente, independente do fluxo original do html.*/
+.btnhome {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.btnyoutube {
+    position: absolute;
+    top: 85px;
+    right: 10px;
+}
+
+.btngithub {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+}
+
+.btninstagram {
+    position: absolute;
+    top: 215px;
+    right: 10px;
+}
+
+.btntwitter {
+    position: absolute;
+    top: 280px;
+    right: 10px;
+}
+
+.btnfacebook {
+    position: absolute;
+    top: 345px;
+    right: 10px;
+}
+
