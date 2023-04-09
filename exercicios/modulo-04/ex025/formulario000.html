@@ -5,38 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <style>
 
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin-top: 10px;
-            margin-left: 20px;
-        }
-
-        div > fieldset {
-            display: inline-block;
-            width: 500px;
-            padding: 10px;
-        }
-    </style>
 </head>
 <body>
     <div>
-        <h1>Cadastro de Funcionários</h1>
+        <h1>Ficha de Cadastro</h1>
         <p>Preencha abaixo o cadastro com suas informações.</p>
     </div>
     
     <form action="" method="post" autocomplete="on">
         <fieldset>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" placeholder="nome" autocomplete="given-name">
-            <label for="sobrenome">Sobrenome</label>
-            <input type="text" name="sombrenome" id="sobrenome" placeholder="sobrenome">
+            <div>
+                <label for="nome">Nome</label>
+                <input class="nome" type="text" name="nome" id="nome" placeholder="nome" autocomplete="given-name">
+            </div>
+            <div>
+                <label class="sobrenome" for="sobrenome">Sobrenome</label>
+                <input class="sobrenome" type="text" name="sombrenome" id="sobrenome" placeholder="sobrenome" autocomplete="family-name">
+            </div>
         </fieldset>
     </form>
 
