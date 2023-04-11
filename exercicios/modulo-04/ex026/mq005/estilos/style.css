@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: rgb(244, 226, 252);
+}
+
+header {
+    background-color: rgb(190, 155, 206);
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+i#burguer {
+    position: absolute;
+    background-color: rgb(166, 131, 180);
+    top: 1px;
+    left: 1px;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    border-radius: 1px 1px 0px black;
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    color: white;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(52, 4, 87);
+    border-top: 2px solid rgb(243, 221, 253);
+}
+
+.opção01:hover {
+    background-color: rgb(242, 235, 245);
+    color: rgb(59, 18, 75);
+}
+
+.opção02:hover {
+    background-color: rgb(211, 182, 223);
+    color: rgb(59, 18, 75);
+}
+
+.opção03:hover {
+    background-color: rgb(186, 142, 204);
+    color: rgb(59, 18, 75);
+}
+
+.opção04:hover {
+    background-color: rgb(158, 105, 179);
+    color: rgb(242, 235, 245);
+}
+
+.opção05:hover {
+    background-color: rgb(132, 79, 153);
+    color: rgb(242, 235, 245);
+}
+
+.opção06:hover {
+    background-color:  rgb(99, 49, 119);
+    color: rgb(242, 235, 245);
+}
+
+.opção07:hover {
+    background-color: rgb(59, 18, 75);
+    color: rgb(242, 235, 245);
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
